@@ -1,0 +1,128 @@
+/* File: LandingPage.css */
+#bg {
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero-section {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.apply-button {
+  margin-top: 1.5rem;
+  background-color: #facc15;
+  padding: 0.75rem 1.25rem;
+  transition: 0.3s;
+  border-radius: 20px;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  transform: scale(1.05);
+  background-color: #fbbf24;
+}
+
+.benefits-section,
+.countries-section,
+.form-section {
+  padding: 3rem 1rem;
+  /* background-color: #f9fafb; */
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.admission-section{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.benefits-grid,
+.countries-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.benefits-grid {
+  grid-template-columns: 1fr;
+}
+
+.countries-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.country-item,
+.benefit-item {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-weight: 600;
+  backdrop-filter: blur(17px) saturate(180%);
+  height: 30px;
+  transition: 0.3;
+  /* background: rgba(0, 0, 0); */
+}
+
+.country-item:hover{
+  transform: scale(1.04);
+}
+
+
+.admission-list {
+  list-style-type: decimal;
+  padding-left: 2rem;
+  font-size: 1rem;
+}
+
+.lead-form {
+  backdrop-filter: blur(17px) saturate(180%);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-input {
+  width: 94%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-input:hover {
+  outline: none;
+  color: white  ;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.submit-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border-color: #3b82f6;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #2563eb;
+}
